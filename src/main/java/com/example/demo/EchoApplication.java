@@ -19,7 +19,11 @@ public class EchoApplication {
 	@EventMapping
 	public TextMessage handleTextMessageEvent(MessageEvent<TextMessageContent> event) {
 		System.out.println("event: " + event);
-		return new TextMessage(event.getMessage().getText() + "rihab");
+		if (event.getMessage().getText() == "Hi" || event.getMessage().getText().equals("Hi")) {
+			return new TextMessage("Hello, How are you?");
+		} else {
+			return new TextMessage(event.getMessage().getText());
+		}
 	}
 
 	@EventMapping
