@@ -8,10 +8,7 @@ import com.linecorp.bot.model.event.message.TextMessageContent;
 import com.linecorp.bot.model.message.TextMessage;
 import com.linecorp.bot.spring.boot.annotation.EventMapping;
 import com.linecorp.bot.spring.boot.annotation.LineMessageHandler;
-import ai.api.AIConfiguration;
-import ai.api.AIDataService;
-import ai.api.model.AIRequest;
-import ai.api.model.AIResponse;
+
 
 @SpringBootApplication
 @LineMessageHandler
